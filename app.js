@@ -5,9 +5,9 @@ const app = express();
 
 app.use(express.json());
 
-var usersRouter = require('./routes/users');
+var authRouter = require('./routes/auth');
 var todoRouter = require('./routes/todo');
-app.use('/', usersRouter);
+app.use('/', authRouter);
 app.use('/todo', todoRouter);
 
 module.exports = app;

@@ -12,14 +12,6 @@ const v = new Validator();
 
 const auth = require("../middleware/auth");
 
-router.get('/', function(req, res, next) {
-  res.send("ok");
-});
-
-router.get('/tes',auth, (req,res,next) => {
-    res.send("tes");
-});
-
 router.post('/register', async (req, res) => {
     const schema = {
         email: 'email',
