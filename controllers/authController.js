@@ -3,6 +3,8 @@ const prisma = new PrismaClient();
 
 var bcrypt = require('bcryptjs');
 var jwt = require("jsonwebtoken");
+
+// try to use prisma validator next
 const Validator = require('fastest-validator');
 const v = new Validator();
 
