@@ -52,10 +52,7 @@ class TodoController {
                 message: err.message
             });
         }
-        
     }
-    
-      
 }
 
 module.exports = TodoController
